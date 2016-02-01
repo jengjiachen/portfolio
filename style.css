@@ -1,0 +1,68 @@
+h1 {
+    font-family: 'Merriweather Sans', serif;
+    font-weight: 700;
+    text-align: right;
+    color: #603813;
+}
+h2 {
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-size: 16pt;
+    text-align: right;
+    color: #603813;
+}
+h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-size: 16pt;
+    text-align: center;
+    color: #603813;
+}
+p {
+    text-align: center;
+    font-weight: 400;
+    font-style: italic;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #603813;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.name {
+    float: right;
+    margin: auto 0;
+}
+.featured-group {
+    max-height: 500px;
+}
+.featured img {
+    max-width: 100%;
+}
+@media screen and (min-width: 900px) {
+    .featured {
+        max-width: 33%;
+        float: left;
+    }
+}
+@media screen and (max-width: 900px) {
+    .featured {
+        /*width: 33%;*/
+        
+        display: block;
+        clear: both;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .header {
+        margin-right: 30px;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+}
